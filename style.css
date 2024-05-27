@@ -1,0 +1,19 @@
+p{
+    color: forestgreen;
+    background-color: cornsilk;
+}
+
+body{
+    /* color: blue; */
+    background-color: yellow;
+}
+
+/* element bases styling   */
+h1{
+    color: brown;
+}
+
+/* id based styling */
+#head2{
+    color: rgb(241, 98, 21);
+}
