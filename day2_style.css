@@ -1,0 +1,36 @@
+/* h1{
+    background-color: bisque;
+} */
+
+#head{
+    background-color: red;
+}
+
+#p1{
+    background-color: aquamarine;
+}
+
+.c1{
+    background-color: skyblue;
+}
+
+/* universal Selector to select*/
+/* *{
+    background-color: lightpink;
+} */
+
+a{
+    color: red;
+}
+
+a :hover{
+    text-underline-offset: blue;
+}
+
+#id1{
+    background-color: red;
+    border: 10px solid blue;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
