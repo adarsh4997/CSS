@@ -1,0 +1,25 @@
+/* pseudo-selector */
+button:active{
+    background-color: red;
+    text-decoration: underline ;
+}
+
+input:focus{
+    border: 3px solid blue;
+    /* background-color: red; */
+}
+
+ul li:nth-child(3n+1){
+    text-decoration: chartreuse;
+    font-weight: bold;
+}
+
+p::before{
+    content:"Read this: ";
+    font-weight: bold;
+}
+
+.px1{
+    background-color: red;
+    width: 50px;
+}
