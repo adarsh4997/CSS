@@ -1,0 +1,30 @@
+div{
+    font-size: 40px;
+    width: 50%;
+    height: 100px;
+}
+
+/* static will not move anywhere even if you try to move */
+#id1{   
+    background-color: orange;
+    position: static;
+    left: 100px;
+}
+
+/* relative will move as per the instruction */
+#id2{
+    background-color: yellow;
+    /* position: relative; */
+    /* 100px is not a margin */
+    /* left: 70%;
+    top: 100%; */
+}
+
+#id3{
+    background-color: red;
+    position: absolute;
+}
+#id4{
+    background-color: lightblue;
+    width: 100%;
+}
