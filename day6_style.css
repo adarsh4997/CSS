@@ -23,13 +23,13 @@
 
 #id2{
     background-color: rgb(247, 120, 1);
-      /* to give high priority to place it at right */
+    order: 10;    /* to give high priority to place it at right */
 }
 
+#id3{
+    background-color: blue;
+}
 
 #id4{
     background-color: bisque;
-}
-#id3{
-    background-color: blue;
 }
