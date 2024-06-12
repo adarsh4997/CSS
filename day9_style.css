@@ -1,0 +1,105 @@
+.container {
+            height: 400px; /* Set a fixed height for the container */
+            position: relative; /* Ensure relative positioning for absolute child */
+            width: 400px;
+            border: 2px solid red;
+        }
+
+
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    box-shadow: 3px 3px 20px rgb(87, 87, 237);
+    border-radius: 50%;
+    animation-name: anime1, anime2, anime4;
+    animation-duration: 10s;
+    /* animation-delay: 3s; */
+    position: absolute;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-timing-function: linear;
+    /* animation-fill-mode: backwards; */
+    top: 0;
+    left: 0;
+}
+
+/* @keyframes anime1{
+    from{
+        left: 10px;
+        top: 50px;
+        background-color: yellow;
+    }
+    to{
+        left: 500px;
+        top: 500px;
+        background-color: red;
+    }
+
+} */
+@keyframes anime1{
+    0%{
+        top:0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 50px);
+    }
+    50% {
+        top: calc(100% - 50px); /* Move to bottom-right corner */
+        left: calc(100% - 50px);
+    }
+    75% {
+        top: calc(100% - 50px); /* Move to bottom-left corner */
+        left: 0;
+    }
+    100% {
+        top: 0; /* Return to top-left corner */
+        left: 0;
+    }
+
+}
+
+@keyframes anime2{
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to{
+        transform:  scale(3) rotate(360deg);
+    }
+
+}
+@keyframes anime4{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: blue;
+    }
+
+}
+
+
+/* transition */
+.container2{
+    width: 400px;
+    height: 400px;
+    background-color: lightcoral;
+    margin: 30px;
+}
+
+.box2{
+    width: 10%;
+    height: 10%;
+    background-color: blue;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.triggerViaClass :hover{
+    transform: translateX(500px) translateY(500px);
+}
