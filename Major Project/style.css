@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -61,7 +62,7 @@ nav a:hover{
 nav ul .icon{
     cursor: pointer;
     background-color: #14bf98;
-    clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+    clip-path: polygon(0 25%, 0 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
     padding:0.75rem;
 }
 
@@ -121,3 +122,264 @@ nav ul .icon:hover a{
     color: #14bf98;
   }
   
+  
+  /* intro */
+  
+  .intro{
+    display: flex;
+    justify-content: center;
+    margin: 10vh 7vh;
+    gap: 50px;
+  }
+  
+  
+.intro div{
+    height: 50vh;
+    width: 500px;
+    overflow: hidden;
+}
+
+.intro-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.intro h5 {
+  text-transform: uppercase;
+  color: #14bf98;
+  font-weight: 500;
+}
+
+.intro div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro div img:hover{
+  transform: scale(1.2);
+}
+
+/* sub intro */
+
+.sub-intro{
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 50px; */
+  flex-wrap: wrap;
+  margin: 10vh 7vh;
+}
+
+.sub-intro>div{
+  /* width: 300px; */
+  width: 200px;
+  /* border: 10px solid blue; */
+}
+
+.hexagon{
+  position: relative;
+}
+
+.hexagon>img{
+  width: 100px;
+  height: 100px;
+}
+
+.hexagon>i{
+  position: absolute;
+  top: 33px;
+  left:33px;
+  font-size: 30px;
+  color: white;
+}
+
+
+/* services */
+
+.services h3,h6 {
+  text-transform: uppercase;
+  color: #14bf98;
+  font-weight: 500;
+  text-align: center;
+}
+
+.services h3{
+  color: #484a46;
+  font-weight: 800;
+}
+
+.services .service-list-container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.services .service-list-container .service-item{
+  width: 20%;
+  /* height: 70vh; */
+  border: 1px solid #484a46;
+  margin-bottom: 100px;
+  
+}
+
+.services .service-list-container .service-item img{
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services .service-list-container .service-item h4{
+  margin: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #484a46;
+  font-weight: 800;
+}
+
+.services .service-list-container .service-item p{
+  margin: 10px;
+  text-align: center;
+  /* font-size: 1rem; */
+  color: #14bf98;
+  /* font-weight: 800; */
+}
+
+.services .service-list-container .service-item ul{
+  margin: 10px;
+  text-align: center;
+  line-height: 2rem;
+  /* font-size: 1rem; */
+  color: #14bf98;
+  list-style: none;
+}
+
+.services .service-list-container .service-item ul li:before{
+  
+  content : "\25a0";
+  margin: 5px;
+}
+
+.services .service-list-container .service-item button{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+.services .portion{
+  display: flex;
+}
+
+.services .portion img{
+  width: 50%;
+  height: 30rem;
+}
+
+
+.services .portion .content{
+  width: 50%;
+  height: 30rem;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.services .testimonials{
+  width: 45%;
+  margin: 5rem auto;
+}
+
+.services .testimonials p{
+  text-align: center;
+  /* margin-block: 10px; */
+  margin: 2rem 0;
+}
+
+.services .testimonials .testimonial-list-container{
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  /* padding: 2rem; */
+
+}
+
+.services .testimonials .testimonial-list-container .testimonial-item{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 5rem; */
+  /* overflow-x: auto; */
+  /* padding: 2rem; */
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  text-align: center;
+
+}
+
+
+.section-title {
+  color: var(--light-green-color);
+}
+
+.call_me{
+  padding: 5rem 20vh;
+  background-color: #113448 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.call_me .content, .call_me .form{
+  color: white;
+  width: 45%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.call_me .content h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.call_me .content p{
+  line-height: 1.5rem;
+  color: black;
+}
+
+.call_me .content ul{
+  padding: 0;
+  list-style: none;
+}
+
+.call_me .content ul li:before{
+  content: '\25a0';
+  color: #14bf98;
+  margin-right: 5px;
+  font-size: 1.25rem;
+}
+
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.call_me form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.call_me form .terms_container label{
+  color: var(--light-grey-border-color);
+}
+
+.call_me form input, .call_me select{
+  background-color: #2a5d77;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
